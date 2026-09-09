@@ -31,4 +31,4 @@
 - 2026-09-09 README accuracy fix — pr-opened (fork, branch off jupyter-apis-aaw2.0). Distinct from PR #1/#2.
 
 ## Mined gaps (discovered, not yet attempted)
-- 2026-09-09 docs README stale/wrong references: `thunder-tests` -> `rest-tests` folder, `THUNDER CLIENT` -> `REST Client` extension, `rest-test\restclient.http` -> `rest-tests\restclient.http` (x2), `intergration`->integration heading, `recommanded`->recommended, `email adress`/`dev cluser` typos, dead link `./DELTA_FRONTEND.md` -> real file `./DEALTA_FRONTEND.md`. All verified present in upstream b5451b2. — status: attempted
+- 2026-09-09 docs README stale/wrong references: `thunder-tests` -> `rest-tests` folder, `THUNDER CLIENT` -> `REST Client` extension, `rest-test\restclient.http` -> `rest-tests\restclient.http` (x2), `intergration`->integration heading, `recommanded`->recommended, `email adress`/`dev cluser` typos, dead link `./DELTA_FRONTEND.md` -> real file `./DEALTA_FRONTEND.md`. All verified present in upstream b5451b2. — status: attempted / PR OPENED https://github.com/olitreadwell/jupyter-apis/pull/3 (docs: fix stale and misspelled README references)
