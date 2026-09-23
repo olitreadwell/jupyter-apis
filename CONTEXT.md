@@ -1,5 +1,5 @@
 # StatCan/jupyter-apis context
-> refreshed 2026-09-09 | upstream default: main @ 694a5a2 | upstream active dev: jupyter-apis-aaw2.0 @ b5451b2
+> refreshed 2026-09-24 | upstream default: main @ 694a5a2 | upstream active dev: jupyter-apis-aaw2.0 @ 8a69a6a
 
 ## Identity & policies
 - upstream: StatCan/jupyter-apis, default branch `main` (stale, last touched 2025-12-30), active dev branch `jupyter-apis-aaw2.0` (all PRs since at least #360 base here). Primary languages: Go backend + Angular 17 (TypeScript) frontend. English-first (yes; README/CONTRIBUTING bilingual EN/FR, issues in English).
@@ -20,10 +20,11 @@
 - active maintainers: mathis-marcotte (very active, most recent work), wg102, Jose-Matsuda. Good outside-merge evidence (wg102 etc. merged).
 
 ## Issue-area health
-- volumes / forms / size options = IN FLUX + claimed: open PR #400 (mathis-marcotte) "changed the data type of the size options in the form" (auto-deploy). Do NOT touch form-cpu-ram / volume size controls.
+- volumes / forms / size options: PR #400 merged 2026-09 (886c98e, changed size-option data type) and #401 merged (8a69a6a, nonce). Form size controls remain an active area (fork PR #2 tests them); avoid editing size-option logic.
 - issue #347 (SAS defaults below validator minimums): DROPPED-ALREADY-FIXED by commit 911bc0ea (2025-02-18) which lowered validators to match deployed config; stale screenshot in issue. No work remains.
 - No maintainer-engaged (documented + approved + open) issue survives. Use repo-audit self-found gaps only.
 
+- 2026-09-24 Go unit tests for status.go + viewer.go helpers (test-coverage, self-found) — pr-opened https://github.com/olitreadwell/jupyter-apis/pull/5 (branch add-go-unit-tests, base jupyter-apis-aaw2.0 @ 8a69a6a). Non-overlapping with fork PRs #1/#2/#3/#4. Verified live: status.go/viewer.go have zero tests upstream; deduped (no upstream issue/PR). Local go test -short, go vet, go build all green; gofmt clean.
 ## Gap ledger (dedupe — READ FIRST, never re-pick)
 - 2026-08-05 PR #1 (fork) test-coverage `configSizeToNumber`/`calculateLimits` — pr-opened-substantive; Go Build red = k3d v4.4.7 404 (env/toolchain, unrelated).
 - 2026-08-12 PR #2 (fork) test-coverage form-new size utils (base `main`) — open; body contains an AI-assistance disclosure (now out of policy) and targets stale `main`. Needs hygiene (strip AI mention, retarget aaw2.0) in a future pass.
@@ -32,4 +33,5 @@
 - 2026-09-09 backend validation errors (notebooks.go) — pr-opened https://github.com/olitreadwell/jupyter-apis/pull/4 (fix: preserve all notebook validation errors; branch fix-backend-validation-errors, base jupyter-apis-aaw2.0). Verified live in upstream b5451b2: validateNotebook/validateUpdateNotebook used assignment instead of append for resource + data-volume errors, silently dropping earlier errors (missing name/namespace/image, invalid name, zero cpu). Added notebooks_test.go. CI green (Unit tests, Check code format and lint, Test, UI tests with Cypress all success).
 
 ## Mined gaps (discovered, not yet attempted)
+- 2026-09-24 tests/CI Go backend had zero unit tests for notebook-status phase mapping (getStoppedStatus/checkReadyNotebook/getStatusFromContainerState/getStatusFromConditions/getStatusFromEvents) and PVCViewer lifecycle helpers (viewerStatus/isViewerPod/getOwningViewer) in status.go + viewer.go. Repro: `go test ./...` ran 0 tests for these files. Dedupe: no upstream issue/PR. — status: attempted / PR OPENED https://github.com/olitreadwell/jupyter-apis/pull/5
 - 2026-09-09 docs README stale/wrong references: `thunder-tests` -> `rest-tests` folder, `THUNDER CLIENT` -> `REST Client` extension, `rest-test\restclient.http` -> `rest-tests\restclient.http` (x2), `intergration`->integration heading, `recommanded`->recommended, `email adress`/`dev cluser` typos, dead link `./DELTA_FRONTEND.md` -> real file `./DEALTA_FRONTEND.md`. All verified present in upstream b5451b2. — status: attempted / PR OPENED https://github.com/olitreadwell/jupyter-apis/pull/3 (docs: fix stale and misspelled README references)
