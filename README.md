@@ -14,8 +14,8 @@ See **[CONTRIBUTING.md](CONTRIBUTING.md)**
 
 To initialize the `.env` file for the development environment, use `task env`.
 You will need to fill out your kubeflow cloud account and kubeflow namespace information manually.
-The `thunder-tests` folder contains configuration for testing requests against the backend. Use the `vscode`
-`THUNDER CLIENT` extension to load the tests.
+The `rest-tests` folder contains configuration for testing requests against the backend. Use the `vscode`
+`REST Client` extension to load the tests.
 
 ### Run API Server
 
@@ -62,7 +62,7 @@ this is passed to the API server as an HTTP header.
 Furthermore, configure the environment variable (`namespace`) in `./frontend/jupyter/src/environments/environment.ts` to specify the current user.
 
 The following can be pasted in a script and executed. This uses the latest node lts/hydrogen version(v18.19.0) with npm v8(10.2.3).
-**NOTE**: `user` is when using vagrant. Use the email adress if it is the dev cluser (please never connect to prod directly)
+**NOTE**: `user` is when using vagrant. Use the email address if it is the dev cluster (please never connect to prod directly)
 
 ```
 cd frontend/common/kubeflow-common-lib
@@ -84,7 +84,7 @@ For the "Use %" column in the "Volumes" table to be populated when running local
 
 To test the backend, install the [REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) or search for REST Client directly from the Extensions tab in VS Code
 
-After being installed, open the `rest-test\restclient.http` file.
+After being installed, open the `rest-tests\restclient.http` file.
 
 Click on the Send Request link that appears above the request or press Ctrl+Alt+R to send the request.
 
@@ -96,9 +96,9 @@ After sending the request, the Response section will display the following detai
 - Response Body: The body of the API response (e.g., JSON data, error messages).
 - Headers: The response headers from the API.
 
-Some requests require certain parameters to have values. Those can be done by updating the variables in the `rest-test\restclient.http` file.
+Some requests require certain parameters to have values. Those can be done by updating the variables in the `rest-tests\restclient.http` file.
 
-### Running intergration tests
+### Running integration tests
 
 We use [Cypress](https://www.cypress.io/) to make our end-to-end tests.
 To run integration tests locally, first make sure that the jupyter-apis app is up and running. Then, from the `jupyter-apis/frontend/jupyter` directory, run either `npm run ui-test` to open the Cypress UI, or `npm run ui-test-ci` to run the cypress tests just in the terminal.
@@ -111,7 +111,7 @@ context. Here are a couple options for setting that up.
 #### Local MiniKF Cluster
 
 This deploys a Kubeflow cluster on your local machine and requires at least 50GB
-of disk space and the recommanded RAM is 12 Gb. First, create the miniKF cluster:
+of disk space and the recommended RAM is 12 Gb. First, create the miniKF cluster:
 
 1. Install Vagrant and Virtual Box.
 2. Create a new directory and run `vagrant init arrikto/minikf` and then
@@ -169,7 +169,7 @@ Any push to an open PR that has the auto-deploy label on it allows developers to
 
 ### Frontend
 
-We've made various changes to the Upstream frontend to align more with our business needs. A summary of these differences can be seen [here](./DELTA_FRONTEND.md).
+We've made various changes to the Upstream frontend to align more with our business needs. A summary of these differences can be seen [here](./DEALTA_FRONTEND.md).
 
 ### Backend
 
