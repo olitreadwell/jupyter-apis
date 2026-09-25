@@ -411,7 +411,7 @@ export class OverviewComponent implements OnDestroy {
           continue envLoop;
         }
 
-        // Classify Enviornment Variable according to Configurations - Pod Defaults
+        // Classify Environment Variable according to Configurations - Pod Defaults
         for (const envGroup of this.envGroups) {
           if (!envGroup.configuration) {
             continue;
