@@ -375,7 +375,7 @@ func (s *server) isNotebookPodOOMKilled(nb *kubeflowv1.Notebook) (bool, error) {
 	labelSelector := labels.NewSelector().Add(*notebookNameRequirement)
 	pods, err := s.listers.pods.Pods(nb.Namespace).List(labelSelector)
 	if err != nil {
-		return false, errors.New("an error occured getting the notebook name requirements")
+		return false, errors.New("an error occurred getting the notebook name requirements")
 	}
 
 	if len(pods) != 0 {
