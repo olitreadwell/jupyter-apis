@@ -19,7 +19,7 @@ In order to use this library while developing locally your Angular app you will 
 npm run build
 
 # might need sudo, depending on where you global folder lives
-# https://nodejs.dev/learn/where-does-npm-install-the-packages
+# https://docs.npmjs.com/downloading-and-installing-packages-globally
 npm link dist/kubeflow
 ```
 ### Linking it to the app
