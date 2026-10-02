@@ -13,7 +13,7 @@ import { JWABackendService } from 'src/app/services/backend.service';
 export class FormConfigurationsComponent implements OnInit, OnDestroy {
   podDefaults: PodDefault[];
   subscriptions = new Subscription();
-  isVisible = false; //Hidding the configuration by default
+  isVisible = false; //Hiding the configuration by default
   @Input() parentForm: FormGroup;
 
   constructor(public ns: NamespaceService, public backend: JWABackendService) {}

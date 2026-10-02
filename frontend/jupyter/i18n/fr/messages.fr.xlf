@@ -2174,7 +2174,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3646507477007895610" datatype="html">
-        <source>An error has occured. Click on the notebook server name for more information.</source>
+        <source>An error has occurred. Click on the notebook server name for more information.</source>
         <target>Une erreur s'est produite. Cliquez sur le nom du serveur bloc-notes pour plus d'informations.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.ts</context>

@@ -105,7 +105,7 @@ func createViewerTemplate(name string, namespace string) (*unstructured.Unstruct
 }
 
 /*
-Substitute environment variables in the templates recusively
+Substitute environment variables in the templates recursively
 
 Most likely, the type for "data" of the first iteration will be a "map[string]interface{}"
 because we are loading in a yaml file
