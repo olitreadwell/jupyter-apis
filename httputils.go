@@ -59,7 +59,7 @@ func (s *server) respond(w http.ResponseWriter, r *http.Request, resp APIRespons
 	}
 }
 
-// error servers an error response to the client.
+// error serves an error response to the client.
 func (s *server) error(w http.ResponseWriter, r *http.Request, err error) {
 	log.Printf("returning error response: %v", err)
 

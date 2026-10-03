@@ -154,7 +154,7 @@ export function createExistingVolumeFormGroup(): FormGroup {
 }
 
 /*
- * Create Form Groups from JS ojects
+ * Create Form Groups from JS objects
  */
 export function createMetadataFormGroupFromPvc(
   pvc: V1PersistentVolumeClaim,
