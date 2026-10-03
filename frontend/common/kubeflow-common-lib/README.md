@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 In order to use this library while developing locally your Angular app you will need to:
 1. Build the `kubeflow` node module from this source code
 2. Link the produced module to your global npm modules
-3. Link the `kubeflow` module in the npm modules of you app
+3. Link the `kubeflow` module in the npm modules of your app
 
 ### Building the library locally
 ```bash
