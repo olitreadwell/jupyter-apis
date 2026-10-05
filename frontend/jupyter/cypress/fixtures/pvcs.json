@@ -69,7 +69,7 @@
       "pendingResize": "0",
       "class": "",
       "modes": ["ReadWriteOnce"],
-      "name": "a-pvc-phase-unvailable-viewer-unavailable",
+      "name": "a-pvc-phase-unavailable-viewer-unavailable",
       "namespace": "kubeflow-user",
       "notebooks": [],
       "usage": "5.567",
