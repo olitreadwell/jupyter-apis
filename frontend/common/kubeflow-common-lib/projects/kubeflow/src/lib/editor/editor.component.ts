@@ -55,7 +55,7 @@ export class EditorComponent implements AfterViewInit, OnDestroy, OnChanges {
       value: this.text,
       language: this.language,
       readOnly: this.readOnly,
-      // Width may not affect the layout when auomaticLayout=true
+      // Width may not affect the layout when automaticLayout=true
       dimension: { width: this.width, height: this.height },
       automaticLayout: true,
       scrollBeyondLastLine: false,

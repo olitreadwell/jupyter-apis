@@ -33,7 +33,7 @@ func kubeflowUserHandler(header string, h http.Handler) http.Handler {
 // request and submits it to the Kubernetes API server. The API server will
 // return whether the user is permitted to perform the requested action.
 //
-// subjectAccessReviewTemplate: A authorization.k8s.io/v1 SubjectAccessReview
+// subjectAccessReviewTemplate: An authorization.k8s.io/v1 SubjectAccessReview
 //                              object used as a template for the request.
 //		Note: the spec.User and Spec.ResourceAttributes.Namespace are REPLACED by this function.
 // next: The next handler to call if the user is authorized to access the desired resource

@@ -117,7 +117,7 @@ export class TableComponent
   }
 
   ngOnInit() {
-    //AAW: use getSlectedNamespace instead of getSelectedNamespace2 since we dont want string[]
+    //AAW: use getSelectedNamespace instead of getSelectedNamespace2 since we dont want string[]
     this.nsSub = this.ns.getSelectedNamespace().subscribe(ns => {
       if (
         !this.config ||

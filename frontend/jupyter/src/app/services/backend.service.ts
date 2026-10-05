@@ -354,7 +354,7 @@ export class JWABackendService extends BackendService {
   }
 
   // Override common service's getErrorMessage
-  // in order to incldue the error.status in error message
+  // in order to include the error.status in error message
   public getErrorMessage(
     error: HttpErrorResponse | ErrorEvent | string,
   ): string {
