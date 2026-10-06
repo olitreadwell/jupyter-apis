@@ -681,7 +681,7 @@
       </trans-unit>
       <trans-unit id="2519615396083382534" datatype="html">
         <source>Select a namespace in which to create a new <x id="PH" equiv-text="resourceName"/>.</source>
-        <target>Sélectionner un espace de noms dasn lequel créer un nouveau <x id="PH" equiv-text="resourceName"/>.</target>
+        <target>Sélectionner un espace de noms dans lequel créer un nouveau <x id="PH" equiv-text="resourceName"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/kubeflow/src/lib/title-actions-toolbar/types.ts</context>
           <context context-type="linenumber">59</context>
@@ -1143,7 +1143,7 @@
       </trans-unit>
       <trans-unit id="79fa9bc4fd4390001eb618c8fe661f0de7a6b540" datatype="html">
         <source>Additional volumes that will be mounted in your Notebook.</source>
-        <target>Les volumes additionels qui seront montés dans votre bloc-notes.</target>
+        <target>Les volumes additionnels qui seront montés dans votre bloc-notes.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/form-data-volumes/form-data-volumes.component.html</context>
           <context context-type="linenumber">3</context>
@@ -2127,7 +2127,7 @@
       </trans-unit>
       <trans-unit id="5387813344448714728" datatype="html">
         <source>Deleting this Notebook Server.</source>
-        <target>Serveur bloc-notes en supression.</target>
+        <target>Serveur bloc-notes en suppression.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.ts</context>
           <context context-type="linenumber">344</context>
@@ -2725,7 +2725,7 @@
       </trans-unit>
       <trans-unit id="5046310788512940184" datatype="html">
         <source>No pod available for this notebook.</source>
-        <target>Auncun pod disponible pour ce bloc-notes.</target>
+        <target>Aucun pod disponible pour ce bloc-notes.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/notebook-page/yaml/yaml.component.ts</context>
           <context context-type="linenumber">31</context>
@@ -2741,7 +2741,7 @@
       </trans-unit>
       <trans-unit id="0afaebfaf7e96d9275910e593afa34e528b6fea0" datatype="html">
         <source> The page you are looking for is not found </source>
-        <target> La page que vous rechechez est introuvable </target>
+        <target> La page que vous recherchez est introuvable </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/page-not-found/page-not-found.component.html</context>
           <context context-type="linenumber">2,4</context>
