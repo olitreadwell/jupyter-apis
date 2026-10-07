@@ -1127,7 +1127,7 @@
       </trans-unit>
       <trans-unit id="9028631140090286921" datatype="html">
         <source>Can&apos;t be lower than requested memory</source>
-        <target>Ne peux pas être moins que la mémoire demandée</target>
+        <target>Ne peut pas être moins que la mémoire demandée</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/form-cpu-ram/form-cpu-ram.component.ts</context>
           <context context-type="linenumber">148</context>
@@ -1431,7 +1431,7 @@
       </trans-unit>
       <trans-unit id="8202886371422310629" datatype="html">
         <source>No value of the Notebook name was provided</source>
-        <target>Aucune nom n'a été fournie pour le bloc-notes</target>
+        <target>Aucun nom n'a été fourni pour le bloc-notes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/form-new.component.ts</context>
           <context context-type="linenumber">168</context>
@@ -1595,7 +1595,7 @@
       </trans-unit>
       <trans-unit id="d421e4bee57dd46a7691643ddf5d2361f17dacf0" datatype="html">
         <source>The cluster will append a random suffix to this name</source>
-        <target>Le cluster va ajouter un suffixe aléatoire à çe nom</target>
+        <target>Le cluster va ajouter un suffixe aléatoire à ce nom</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/volume/new/name/name.component.html</context>
           <context context-type="linenumber">39</context>
@@ -1975,7 +1975,7 @@
       </trans-unit>
       <trans-unit id="b797629c9d8a090a9588c91a3661d90e5cbcb3f1" datatype="html">
         <source> Approximate cost of notebook server resources - summed values may not match total due to rounding </source>
-        <target> Approximation du coût des ressources de serveur bloc-notes - la somme des valeurs pourraient être différentes du total du à l'arrondissement </target>
+        <target> Approximation du coût des ressources de serveur bloc-notes - la somme des valeurs pourraient être différentes du total dû à l'arrondissement </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.html</context>
           <context context-type="linenumber">34,37</context>
@@ -2255,7 +2255,7 @@
       </trans-unit>
       <trans-unit id="5156704408648015254" datatype="html">
         <source>Volume was submitted successfully.</source>
-        <target>Le volume a été soumit avec succès</target>
+        <target>Le volume a été soumis avec succès</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.ts</context>
           <context context-type="linenumber">695</context>
@@ -2295,7 +2295,7 @@
       </trans-unit>
       <trans-unit id="97059345835556637" datatype="html">
         <source>This notebook server was last stopped because of inactivity</source>
-        <target>Ce serveur bloc-notes à été automatiquement arrêté pour raison d'inactivité</target>
+        <target>Ce serveur bloc-notes a été automatiquement arrêté pour raison d'inactivité</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/stopped-time/stopped-time.component.ts</context>
           <context context-type="linenumber">21</context>
@@ -2333,7 +2333,7 @@
       </trans-unit>
       <trans-unit id="27ba3f1a32f095bb68a5704e11f728e7a2d8731d" datatype="html">
         <source> No logs were found for this Notebook. </source>
-        <target> Aucune journalisation n'a été trouvé pour ce bloc-notes. </target>
+        <target> Aucune journalisation n'a été trouvée pour ce bloc-notes. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/notebook-page/logs/logs.component.html</context>
           <context context-type="linenumber">5,7</context>
@@ -2813,7 +2813,7 @@
       </trans-unit>
       <trans-unit id="3398044668566682216" datatype="html">
         <source>No pods are using this PVC.</source>
-        <target>Aucun pod utilise ce PVC.</target>
+        <target>Aucun pod n'utilise ce PVC.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/volume-details-page/overview/overview.component.ts</context>
           <context context-type="linenumber">224</context>

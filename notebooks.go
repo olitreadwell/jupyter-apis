@@ -482,12 +482,12 @@ func (s *server) createDefaultNotebook(namespace string, notebookNames []string,
 
 	notebookRequirement, err := labels.NewRequirement("notebook.statcan.gc.ca/default-notebook", selection.Exists, []string{})
 	if err != nil {
-		return notebook, errors.New("an error occurent checking for a default notebook")
+		return notebook, errors.New("an error occurred checking for a default notebook")
 	}
 	labelSelector := labels.NewSelector().Add(*notebookRequirement)
 	notebooks, err := s.listers.notebooks.Notebooks(namespace).List(labelSelector)
 	if err != nil {
-		return notebook, errors.New("an error occurent checking for a default notebook")
+		return notebook, errors.New("an error occurred checking for a default notebook")
 	}
 
 	if len(notebooks) != 0 {
