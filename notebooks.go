@@ -375,7 +375,7 @@ func (s *server) isNotebookPodOOMKilled(nb *kubeflowv1.Notebook) (bool, error) {
 	labelSelector := labels.NewSelector().Add(*notebookNameRequirement)
 	pods, err := s.listers.pods.Pods(nb.Namespace).List(labelSelector)
 	if err != nil {
-		return false, errors.New("an error occured getting the notebook name requirements")
+		return false, errors.New("an error occurred getting the notebook name requirements")
 	}
 
 	if len(pods) != 0 {
@@ -482,12 +482,12 @@ func (s *server) createDefaultNotebook(namespace string, notebookNames []string,
 
 	notebookRequirement, err := labels.NewRequirement("notebook.statcan.gc.ca/default-notebook", selection.Exists, []string{})
 	if err != nil {
-		return notebook, errors.New("an error occurent checking for a default notebook")
+		return notebook, errors.New("an error occurred checking for a default notebook")
 	}
 	labelSelector := labels.NewSelector().Add(*notebookRequirement)
 	notebooks, err := s.listers.notebooks.Notebooks(namespace).List(labelSelector)
 	if err != nil {
-		return notebook, errors.New("an error occurent checking for a default notebook")
+		return notebook, errors.New("an error occurred checking for a default notebook")
 	}
 
 	if len(notebooks) != 0 {
@@ -1091,7 +1091,7 @@ func formatCpuCores(cpu resource.Quantity) string {
 func formatMemoryToGibibytes(memory resource.Quantity) string {
 	// Convert bytes to Gi (1 Gi = 1024 Mi, 1 Mi = 1024 Ki)
 	// 1 Gi = 1024 * 1024 * 1024 bytes
-	// resouce.Millivalue is 1/1000 bytes (400m = 0.4 bytes)
+	// resource.Millivalue is 1/1000 bytes (400m = 0.4 bytes)
 	gibibytes := float64(memory.MilliValue()) / (1024 * 1024 * 1024 * 1000)
 
 	return strconv.FormatFloat(gibibytes, 'f', -1, 64)

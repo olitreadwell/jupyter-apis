@@ -43,7 +43,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Kubeflow common library dependecies
+      - name: Install Kubeflow common library dependencies
         run: |
           cd frontend/common/kubeflow-common-lib
           npm i
@@ -70,7 +70,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Kubeflow common library dependecies
+      - name: Install Kubeflow common library dependencies
         run: |
           cd frontend/common/kubeflow-common-lib
           npm i
