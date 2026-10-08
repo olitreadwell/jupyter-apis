@@ -19,7 +19,7 @@ In order to use the editor component in one of our web apps, you need to do the 
 
 ### Test a component using the editor
 
-In order to run unit tests for a component that uses the editor,you need to edit your `karma.conf.js` file and add the following:
+In order to run unit tests for a component that uses the editor, you need to edit your `karma.conf.js` file and add the following:
 
 ```
     files: [
@@ -42,7 +42,7 @@ In order to run unit tests for a component that uses the editor,you need to edit
     },
 ```
 
-This will ensure that all neccessary files are loaded during tests.
+This will ensure that all necessary files are loaded during tests.
 
 ## Monaco.ts
 
@@ -52,6 +52,6 @@ The file specifies the API of the editor and its content was copied from https:/
 
 In case you need to update the editor's API to a newer version, follow these steps:
 
-- Select a new tag in from the repo https://github.com/microsoft/monaco-editor/blob/main/website/typedoc/monaco.d.ts
+- Select a new tag from the repo https://github.com/microsoft/monaco-editor/blob/main/website/typedoc/monaco.d.ts
 - Update the README to reference the new tag and link
 - Copy the contents of the `monaco.d.ts` file into `monaco.ts`, replacing its previous content.

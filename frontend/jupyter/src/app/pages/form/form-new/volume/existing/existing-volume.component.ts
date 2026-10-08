@@ -63,7 +63,7 @@ export class ExistingVolumeComponent implements OnInit {
 
   typeChanged(type: EXISTING_VOLUME_TYPE) {
     // In case of custom we change from a form group to a simple form control
-    // The user will be inputing a YAML, which we will be converting to JS dict
+    // The user will be inputting a YAML, which we will be converting to JS dict
     if (type === EXISTING_VOLUME_TYPE.CUSTOM) {
       const currSrc = this.volGroup.get('existingSource').value;
       this.yamlInternal = dump(currSrc);

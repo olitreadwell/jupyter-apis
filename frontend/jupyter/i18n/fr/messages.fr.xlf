@@ -665,7 +665,7 @@
       </trans-unit>
       <trans-unit id="8194451610848887333" datatype="html">
         <source>Could not connect to the backend.</source>
-        <target>Impossible de se connecter à l'infrastructure d'arrière plan.</target>
+        <target>Impossible de se connecter à l'infrastructure d'arrière-plan.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/kubeflow/src/lib/services/backend/backend.service.ts</context>
           <context context-type="linenumber">155</context>
@@ -681,7 +681,7 @@
       </trans-unit>
       <trans-unit id="2519615396083382534" datatype="html">
         <source>Select a namespace in which to create a new <x id="PH" equiv-text="resourceName"/>.</source>
-        <target>Sélectionner un espace de noms dasn lequel créer un nouveau <x id="PH" equiv-text="resourceName"/>.</target>
+        <target>Sélectionner un espace de noms dans lequel créer un nouveau <x id="PH" equiv-text="resourceName"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/kubeflow/src/lib/title-actions-toolbar/types.ts</context>
           <context context-type="linenumber">59</context>
@@ -1127,7 +1127,7 @@
       </trans-unit>
       <trans-unit id="9028631140090286921" datatype="html">
         <source>Can&apos;t be lower than requested memory</source>
-        <target>Ne peux pas être moins que la mémoire demandée</target>
+        <target>Ne peut pas être moins que la mémoire demandée</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/form-cpu-ram/form-cpu-ram.component.ts</context>
           <context context-type="linenumber">148</context>
@@ -1143,7 +1143,7 @@
       </trans-unit>
       <trans-unit id="79fa9bc4fd4390001eb618c8fe661f0de7a6b540" datatype="html">
         <source>Additional volumes that will be mounted in your Notebook.</source>
-        <target>Les volumes additionels qui seront montés dans votre bloc-notes.</target>
+        <target>Les volumes additionnels qui seront montés dans votre bloc-notes.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/form-data-volumes/form-data-volumes.component.html</context>
           <context context-type="linenumber">3</context>
@@ -1239,7 +1239,7 @@
       </trans-unit>
       <trans-unit id="5474468673828369277" datatype="html">
         <source>There are currently no <x id="PH" equiv-text="vendor.uiName"/> GPUs in your cluster.</source>
-        <target>Il n'y a présentement aucun GPUs de <x id="PH" equiv-text="vendor.uiName"/> dans votre cluster.</target>
+        <target>Il n'y a présentement aucun GPU de <x id="PH" equiv-text="vendor.uiName"/> dans votre cluster.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/form-gpus/form-gpus.component.ts</context>
           <context context-type="linenumber">75</context>
@@ -1255,7 +1255,7 @@
       </trans-unit>
       <trans-unit id="8c4f7047175c0e066be33cfe2d8dd0c2237ddf4e" datatype="html">
         <source>Custom Notebook</source>
-        <target>Bloc-notes personnalisée</target>
+        <target>Bloc-notes personnalisé</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/form-image-custom/form-image-custom.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1431,7 +1431,7 @@
       </trans-unit>
       <trans-unit id="8202886371422310629" datatype="html">
         <source>No value of the Notebook name was provided</source>
-        <target>Aucune nom n'a été fournie pour le bloc-notes</target>
+        <target>Aucun nom n'a été fourni pour le bloc-notes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/form-new.component.ts</context>
           <context context-type="linenumber">168</context>
@@ -1595,7 +1595,7 @@
       </trans-unit>
       <trans-unit id="d421e4bee57dd46a7691643ddf5d2361f17dacf0" datatype="html">
         <source>The cluster will append a random suffix to this name</source>
-        <target>Le cluster va ajouter un suffixe aléatoire à çe nom</target>
+        <target>Le cluster va ajouter un suffixe aléatoire à ce nom</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/form/form-new/volume/new/name/name.component.html</context>
           <context context-type="linenumber">39</context>
@@ -1975,7 +1975,7 @@
       </trans-unit>
       <trans-unit id="b797629c9d8a090a9588c91a3661d90e5cbcb3f1" datatype="html">
         <source> Approximate cost of notebook server resources - summed values may not match total due to rounding </source>
-        <target> Approximation du coût des ressources de serveur bloc-notes - la somme des valeurs pourraient être différentes du total du à l'arrondissement </target>
+        <target> Approximation du coût des ressources de serveur bloc-notes - la somme des valeurs pourraient être différentes du total dû à l'arrondissement </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.html</context>
           <context context-type="linenumber">34,37</context>
@@ -2031,7 +2031,7 @@
       </trans-unit>
       <trans-unit id="7668986b9f753fcd72ad4a00b1a0c4861d1f7fb8" datatype="html">
         <source>Last 30 days</source>
-        <target>Dernier 30 jours</target>
+        <target>Derniers 30 jours</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.html</context>
           <context context-type="linenumber">52</context>
@@ -2127,7 +2127,7 @@
       </trans-unit>
       <trans-unit id="5387813344448714728" datatype="html">
         <source>Deleting this Notebook Server.</source>
-        <target>Serveur bloc-notes en supression.</target>
+        <target>Serveur bloc-notes en suppression.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.ts</context>
           <context context-type="linenumber">344</context>
@@ -2174,7 +2174,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3646507477007895610" datatype="html">
-        <source>An error has occured. Click on the notebook server name for more information.</source>
+        <source>An error has occurred. Click on the notebook server name for more information.</source>
         <target>Une erreur s'est produite. Cliquez sur le nom du serveur bloc-notes pour plus d'informations.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.ts</context>
@@ -2255,7 +2255,7 @@
       </trans-unit>
       <trans-unit id="5156704408648015254" datatype="html">
         <source>Volume was submitted successfully.</source>
-        <target>Le volume a été soumit avec succès</target>
+        <target>Le volume a été soumis avec succès</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/index-default.component.ts</context>
           <context context-type="linenumber">695</context>
@@ -2295,7 +2295,7 @@
       </trans-unit>
       <trans-unit id="97059345835556637" datatype="html">
         <source>This notebook server was last stopped because of inactivity</source>
-        <target>Ce serveur bloc-notes à été automatiquement arrêté pour raison d'inactivité</target>
+        <target>Ce serveur bloc-notes a été automatiquement arrêté pour raison d'inactivité</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/index/index-default/stopped-time/stopped-time.component.ts</context>
           <context context-type="linenumber">21</context>
@@ -2333,7 +2333,7 @@
       </trans-unit>
       <trans-unit id="27ba3f1a32f095bb68a5704e11f728e7a2d8731d" datatype="html">
         <source> No logs were found for this Notebook. </source>
-        <target> Aucune journalisation n'a été trouvé pour ce bloc-notes. </target>
+        <target> Aucune journalisation n'a été trouvée pour ce bloc-notes. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/notebook-page/logs/logs.component.html</context>
           <context context-type="linenumber">5,7</context>
@@ -2725,7 +2725,7 @@
       </trans-unit>
       <trans-unit id="5046310788512940184" datatype="html">
         <source>No pod available for this notebook.</source>
-        <target>Auncun pod disponible pour ce bloc-notes.</target>
+        <target>Aucun pod disponible pour ce bloc-notes.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/notebook-page/yaml/yaml.component.ts</context>
           <context context-type="linenumber">31</context>
@@ -2741,7 +2741,7 @@
       </trans-unit>
       <trans-unit id="0afaebfaf7e96d9275910e593afa34e528b6fea0" datatype="html">
         <source> The page you are looking for is not found </source>
-        <target> La page que vous rechechez est introuvable </target>
+        <target> La page que vous recherchez est introuvable </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/page-not-found/page-not-found.component.html</context>
           <context context-type="linenumber">2,4</context>
@@ -2813,7 +2813,7 @@
       </trans-unit>
       <trans-unit id="3398044668566682216" datatype="html">
         <source>No pods are using this PVC.</source>
-        <target>Aucun pod utilise ce PVC.</target>
+        <target>Aucun pod n'utilise ce PVC.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/volume-details-page/overview/overview.component.ts</context>
           <context context-type="linenumber">224</context>
@@ -2953,7 +2953,7 @@
       </trans-unit>
       <trans-unit id="4872314094100927318" datatype="html">
         <source>Starting Notebook server &apos;<x id="PH" equiv-text="name"/>&apos;...</source>
-        <target>Démarrage le serveur bloc-notes &apos;<x id="PH" equiv-text="name"/>&apos;...</target>
+        <target>Démarrage du serveur bloc-notes &apos;<x id="PH" equiv-text="name"/>&apos;...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/actions.service.ts</context>
           <context context-type="linenumber">86</context>
@@ -3105,7 +3105,7 @@ Cette augmentation de taille ne sera effective que lorsque ce volume sera attach
         </context-group>
       </trans-unit>
       <trans-unit id="1892129786509261911" datatype="html">
-        <source>To note: this change is non-reversable.</source>
+        <source>To note: this change is non-reversible.</source>
         <target>À noter : ce changement est irréversible.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/config.ts</context>

@@ -250,8 +250,8 @@ export class ActionsService {
             return;
           }
 
-          // if the size is bigger than 128, then show a confirmDialog before submiting the expand action.
-          // 128 was decided with the product owner as the treshold of what is concidered a large volume size.
+          // if the size is bigger than 128, then show a confirmDialog before submitting the expand action.
+          // 128 was decided with the product owner as the threshold of what is considered a large volume size.
           if (res.newSize < 128) {
             this.backend
               .expandPVC(pvc.namespace, pvc.name, res.newSize)

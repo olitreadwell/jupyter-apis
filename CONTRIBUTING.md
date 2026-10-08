@@ -26,4 +26,4 @@ Si c'est la première fois que vous contribuez à GitHub, ne vous en faites pas!
 
 ### Sécurité
 
-**Ne publiez aucun problème de sécurité sur le dépôt publique!** Voir [SECURITY.md](SECURITY.md)
+**Ne publiez aucun problème de sécurité sur le dépôt public!** Voir [SECURITY.md](SECURITY.md)

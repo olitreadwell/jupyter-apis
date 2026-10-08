@@ -54,7 +54,7 @@ describe('ExistingPvcComponent', () => {
       datavols: new FormArray([
         new FormGroup({
           existingSource: new FormGroup({
-            persistantVolumeClaim: new FormGroup({
+            persistentVolumeClaim: new FormGroup({
               readOnly: new FormControl(),
               claimName: new FormControl(),
             }),
@@ -66,7 +66,7 @@ describe('ExistingPvcComponent', () => {
     component.pvcGroup = (fakeData.get('datavols') as FormArray)
       .at(0)
       .get('existingSource')
-      .get('persistantVolumeClaim') as FormGroup;
+      .get('persistentVolumeClaim') as FormGroup;
     component.mountedVolumes = new Set();
 
     fixture.detectChanges();

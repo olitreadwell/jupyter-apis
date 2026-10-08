@@ -50,10 +50,10 @@ describe('Volume Details Page', () => {
     cy.get('div.monaco-editor').should('exist');
   });
 
-  it('should delete colume from volume details page', () => {
+  it('should delete volume from volume details page', () => {
     // assert that delete is disabled on volumes attached
     cy.get('[data-cy-toolbar-button="DELETE"]').should('be.disabled');
-    // aseert that delete button can delete
+    // assert that delete button can delete
     cy.intercept('GET', `/api/namespaces/kubeflow-user/pvcs/test-volume2`, {
       success: true,
       status: 200,
