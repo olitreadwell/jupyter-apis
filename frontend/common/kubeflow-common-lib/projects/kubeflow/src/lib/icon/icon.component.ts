@@ -24,8 +24,8 @@ export class IconComponent {
     }
 
     if (this.getCategory() === 'fa') {
-      const inpt = this.iconSplit;
-      return inpt.slice(1, inpt.length);
+      const input = this.iconSplit;
+      return input.slice(1, input.length);
     }
 
     return this.iconSplit[1];

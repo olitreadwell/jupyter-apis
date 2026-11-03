@@ -154,7 +154,7 @@ export function createExistingVolumeFormGroup(): FormGroup {
 }
 
 /*
- * Create Form Groups from JS ojects
+ * Create Form Groups from JS objects
  */
 export function createMetadataFormGroupFromPvc(
   pvc: V1PersistentVolumeClaim,
@@ -235,7 +235,7 @@ export function createExistingSourceFormGroupFromVolume(
   }
 
   // create generic form control for all other options
-  // https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#volume-v1-core
+  // https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#Volume
   const group = new FormGroup({});
   for (const [key, val] of Object.entries(volume)) {
     group.addControl(key, new FormControl(val));

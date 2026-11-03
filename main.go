@@ -73,7 +73,7 @@ func main() {
 	// Check if we are running inside the cluster, and default to using that instead of kubeconfig if that's the case
 	_, err = os.Stat("/var/run/secrets/kubernetes.io/serviceaccount")
 
-	// Setup the default path to the of the kubeconfig file
+	// Setup the default path to the kubeconfig file
 	if home := homedir.HomeDir(); os.IsNotExist(err) && home != "" {
 		flag.StringVar(&kubeconfig, "kubeconfig", filepath.Join(home, ".kube", "config"), "(optional) absolute path to the kubeconfig file")
 	} else {
@@ -135,7 +135,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Generate the Kubernetes Dynamic client for interactic with CRDS
+	// Generate the Kubernetes Dynamic client for interacting with CRDs
 	s.dynamic, err = dynamic.NewForConfig(config)
 	if err != nil {
 		log.Fatal(err)

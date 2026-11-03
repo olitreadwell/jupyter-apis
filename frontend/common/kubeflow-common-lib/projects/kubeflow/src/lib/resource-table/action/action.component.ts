@@ -59,8 +59,8 @@ export class ActionComponent {
     }
 
     if (this.getCategory(icon) === 'fa') {
-      const inpt = icon.split(':');
-      return inpt.slice(1, inpt.length);
+      const input = icon.split(':');
+      return input.slice(1, input.length);
     }
 
     return icon.split(':')[1];

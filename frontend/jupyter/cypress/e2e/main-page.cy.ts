@@ -876,7 +876,7 @@ describe('Main tables', () => {
         .find('mat-error')
         .should('have.text', 'New size has to be larger than the current value');
 
-      // assert succesful increase
+      // assert successful increase
       cy.get('[data-cy-form-input="volumeSize"]').click().get('mat-option').contains('64').click();
       cy.intercept(
         'PATCH',
@@ -920,7 +920,7 @@ describe('Main tables', () => {
         .find('.mat-mdc-dialog-actions > button')
         .contains('CANCEL')
         .click();
-      // asert that the first popup is still present
+      // assert that the first popup is still present
       cy.get('.mat-mdc-dialog-title')
         .should('be.visible')
         .and(

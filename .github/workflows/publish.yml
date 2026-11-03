@@ -113,7 +113,7 @@ jobs:
           fi
         done
 
-    # Container build and push to a Azure Container registry (ACR)
+    # Container build and push to an Azure Container registry (ACR)
     - name: Push to ACR if necessary
       if: steps.should-i-push.outputs.boolean == 'true'
       run: |

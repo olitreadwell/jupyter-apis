@@ -43,7 +43,7 @@ export class ExponentialBackoff {
   }
 
   public start() {
-    // Reset the shceduler
+    // Reset the scheduler
     if (this.emitter) {
       this.emitter.unsubscribe();
     }

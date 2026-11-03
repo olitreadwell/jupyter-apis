@@ -81,8 +81,8 @@ var statusMessages = map[statusKey]string{
 	notebookDeleting: "Deleting this Notebook Server.",
 	running:          "Running",
 	noInformation:    "Couldn't find any information for the status of this notebook server.",
-	errorCondition:   "An error has occured. Click on the notebook server name for more information.",
-	errorEvent:       "An error has occured. Click on the notebook server name for more information.",
+	errorCondition:   "An error has occurred. Click on the notebook server name for more information.",
+	errorEvent:       "An error has occurred. Click on the notebook server name for more information.",
 	schedulingPod:    "Scheduling the Pod.",
 }
 

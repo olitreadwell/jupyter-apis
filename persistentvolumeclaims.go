@@ -116,10 +116,10 @@ const (
 	PvcPhaseStopped       pvcPhase = "stopped"
 )
 
-// PVCUsageAnnotation is the annotation name representing the the used percentage of the PVC
+// PVCUsageAnnotation is the annotation name representing the used percentage of the PVC
 const PVCUsageAnnotation string = "pvc.kubeflow.org/usage"
 
-// PVCUsedBytesAnnotation is the annotation name representing the the amount of bytes used in the PVC
+// PVCUsedBytesAnnotation is the annotation name representing the amount of bytes used in the PVC
 const PVCUsedBytesAnnotation string = "pvc.kubeflow.org/used-bytes"
 
 var validPVCSizes = []string{"4Gi", "8Gi", "16Gi", "32Gi", "64Gi", "128Gi", "256Gi", "512Gi"}

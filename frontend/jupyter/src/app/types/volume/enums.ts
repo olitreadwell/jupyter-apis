@@ -1,5 +1,5 @@
 /*
- * https://v1-18.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#volume-v1-core
+ * https://kubernetes.io/docs/reference/kubernetes-api/core/pod-v1/#Volume
  */
 export enum NEW_VOLUME_TYPE {
   EMPTY = 'Empty',

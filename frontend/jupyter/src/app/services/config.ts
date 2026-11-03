@@ -68,7 +68,7 @@ export function getExpandVolumeDialogConfig(
   return {
     title: $localize`Increase size of volume ${name}`,
     message: $localize`Select a new size for this volume. You can only increase the size, not reduce it.\n\nThis size increase will only be completed when this volume is attached to a running notebook server.`,
-    boldMessage: $localize`To note: this change is non-reversable.`,
+    boldMessage: $localize`To note: this change is non-reversible.`,
     accept: $localize`Submit`,
     applying: $localize`INCREASING`,
     confirmColor: 'primary',
