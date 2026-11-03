@@ -475,6 +475,12 @@ func (s *server) enumerateNames(name string, nameList []string) string {
 	return name + "-" + strconv.Itoa(count)
 }
 
+// parseMemoryGi parses a memory value expressed in gibibytes, as stored in the
+// spawner form defaults (e.g. "2.0"), into a Kubernetes resource quantity.
+func parseMemoryGi(value string) (resource.Quantity, error) {
+	return resource.ParseQuantity(value + "Gi")
+}
+
 // Sets default values to notebook request if missing
 func (s *server) createDefaultNotebook(namespace string, notebookNames []string, pvcNames []string) (newnotebookrequest, error) {
 	var notebook newnotebookrequest
@@ -507,12 +513,12 @@ func (s *server) createDefaultNotebook(namespace string, notebookNames []string,
 		return notebook, err
 	}
 
-	memoryvalue, err := resource.ParseQuantity(s.Config.SpawnerFormDefaults.Memory.Value + "Gi")
+	memoryvalue, err := parseMemoryGi(s.Config.SpawnerFormDefaults.Memory.Value)
 	if err != nil {
 		return notebook, err
 	}
 
-	memorylimitvalue, err := resource.ParseQuantity(s.Config.SpawnerFormDefaults.Memory.LimitValue + "Gi")
+	memorylimitvalue, err := parseMemoryGi(s.Config.SpawnerFormDefaults.Memory.LimitValue)
 	if err != nil {
 		return notebook, err
 	}
@@ -730,7 +736,7 @@ func (s *server) NewNotebook(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if s.Config.SpawnerFormDefaults.Memory.ReadOnly {
-		val, err := resource.ParseQuantity(s.Config.SpawnerFormDefaults.Memory.Value)
+		val, err := parseMemoryGi(s.Config.SpawnerFormDefaults.Memory.Value)
 		if err != nil {
 			s.error(w, r, err)
 			return
@@ -1382,7 +1388,7 @@ func validateNotebook(request newnotebookrequest) error {
 	}
 
 	// Resource constraints
-	validationErrors = validateNotebookResources(request.CPU, request.CPULimit, request.Memory, request.MemoryLimit)
+	validationErrors = append(validationErrors, validateNotebookResources(request.CPU, request.CPULimit, request.Memory, request.MemoryLimit)...)
 
 	// Enum checks
 	if request.ImagePullPolicy != "Always" { // the value is always "Always"
@@ -1402,7 +1408,7 @@ func validateNotebook(request newnotebookrequest) error {
 	}
 
 	if request.DataVolumes != nil {
-		validationErrors = validateNotebookDataVolumes(request.DataVolumes)
+		validationErrors = append(validationErrors, validateNotebookDataVolumes(request.DataVolumes)...)
 	}
 
 	// Return all validation errors
@@ -1418,7 +1424,7 @@ func validateUpdateNotebook(request updatenotebookrequest) error {
 	var validationErrors []string
 
 	// Resource constraints
-	validationErrors = validateNotebookResources(request.CPU, request.CPULimit, request.Memory, request.MemoryLimit)
+	validationErrors = append(validationErrors, validateNotebookResources(request.CPU, request.CPULimit, request.Memory, request.MemoryLimit)...)
 
 	// Workspace Volume
 	err := validateNotebookVolume(request.Workspace)
@@ -1428,7 +1434,7 @@ func validateUpdateNotebook(request updatenotebookrequest) error {
 
 	// Data volumes
 	if request.DataVolumes != nil {
-		validationErrors = validateNotebookDataVolumes(request.DataVolumes)
+		validationErrors = append(validationErrors, validateNotebookDataVolumes(request.DataVolumes)...)
 	}
 
 	// Return all validation errors
