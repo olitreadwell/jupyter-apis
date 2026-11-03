@@ -1388,7 +1388,7 @@ func validateNotebook(request newnotebookrequest) error {
 	}
 
 	// Resource constraints
-	validationErrors = validateNotebookResources(request.CPU, request.CPULimit, request.Memory, request.MemoryLimit)
+	validationErrors = append(validationErrors, validateNotebookResources(request.CPU, request.CPULimit, request.Memory, request.MemoryLimit)...)
 
 	// Enum checks
 	if request.ImagePullPolicy != "Always" { // the value is always "Always"
@@ -1408,7 +1408,7 @@ func validateNotebook(request newnotebookrequest) error {
 	}
 
 	if request.DataVolumes != nil {
-		validationErrors = validateNotebookDataVolumes(request.DataVolumes)
+		validationErrors = append(validationErrors, validateNotebookDataVolumes(request.DataVolumes)...)
 	}
 
 	// Return all validation errors
@@ -1424,7 +1424,7 @@ func validateUpdateNotebook(request updatenotebookrequest) error {
 	var validationErrors []string
 
 	// Resource constraints
-	validationErrors = validateNotebookResources(request.CPU, request.CPULimit, request.Memory, request.MemoryLimit)
+	validationErrors = append(validationErrors, validateNotebookResources(request.CPU, request.CPULimit, request.Memory, request.MemoryLimit)...)
 
 	// Workspace Volume
 	err := validateNotebookVolume(request.Workspace)
@@ -1434,7 +1434,7 @@ func validateUpdateNotebook(request updatenotebookrequest) error {
 
 	// Data volumes
 	if request.DataVolumes != nil {
-		validationErrors = validateNotebookDataVolumes(request.DataVolumes)
+		validationErrors = append(validationErrors, validateNotebookDataVolumes(request.DataVolumes)...)
 	}
 
 	// Return all validation errors
